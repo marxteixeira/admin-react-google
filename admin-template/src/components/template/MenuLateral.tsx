@@ -19,7 +19,13 @@ export default function MenuLateral() {
             </ul>
             {/* //essa ul será o ícone de sair */}
             <ul >
-                <MenuItem url="/" texto="Sair" icone={IconeSair}></MenuItem>
+                <MenuItem texto="Sair" icone={IconeSair}
+                    onClick={() => console.log('logout')}
+                    className={`
+                        text-red-600  
+                        hover:bg-red-400 hover:text-white
+                    `}
+                />
             </ul>
         </aside>
     )
